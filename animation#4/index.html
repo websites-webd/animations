@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
+  rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <title>Web_sites</title>
+</head>
+<body>
+  <main>
+    <section class="landing">
+      <div class="wrapper">
+        <h1 class="heading" >Web Development</h1>
+        <div class="picture" style="top: 30px; left: 30px">
+          <div class="frame">
+            <div class="inside">HTML</div>
+          </div>
+        </div>
+        <div class="picture" style="top: 120px; left: 240px;" >
+          <div class="frame">
+            <div class="inside">CSS</div>
+          </div>
+        </div>
+        <div class="picture" style="top: 0px; left: 600px;" >
+          <div class="frame">
+            <div class="inside">Javascript</div>
+          </div>
+        </div>
+        <div class="picture" style="top: 270px; left: 10px;" >
+          <div class="frame">
+            <div class="inside">React</div>
+          </div>
+        </div>
+        <div class="picture" style="top: 170px; left: 500px;" >
+          <div class="frame">
+            <div class="inside">Angular</div>
+          </div>
+        </div>
+        <div class="picture" style="top: 370px; left: 250px;" >
+          <div class="frame">
+            <div class="inside">Node.js</div>
+          </div>
+        </div>
+        <div class="picture" style="top: 520px; left: 60px;" >
+          <div class="frame">
+            <div class="inside">MongoDB</div>
+          </div>
+        </div>
+        <div class="picture" style="top: 590px; left: 340px;" >
+          <div class="frame">
+            <div class="inside">Express</div>
+          </div>
+        </div>
+        <div class="picture" style="top: 490px; left: 570px;">
+          <div class="frame">
+            <div class="inside">Vue.js</div>
+          </div>
+        </div>
+        <div class="picture" style="top: 610px; left: 800px;" >
+          <div class="frame">
+            <div class="inside">Ruby</div>
+          </div>
+        </div>
+        <div class="picture" style="top: 430px; left: 900px;">
+          <div class="frame">
+            <div class="inside">Django</div>
+          </div>
+        </div>
+        <div class="picture" style="top: 570px; left: 1120px;" >
+          <div class="frame">
+            <div class="inside">Zend</div>
+          </div>
+        </div>
+        <div class="picture" style="top: 440px; left: 1370px;" >
+          <div class="frame">
+            <div class="inside">Laravel</div>
+          </div>
+        </div>
+        <div class="picture" style="top: 280px; left: 1180px;" >
+          <div class="frame">
+            <div class="inside">Python</div>
+          </div>
+        </div>
+        <div class="picture" style="top: 120px; left: 1320px;">
+          <div class="frame">
+            <div class="inside">Php</div>
+          </div>
+        </div>
+        <div class="picture" style="top: 30px; left: 1100px;" >
+          <div class="frame">
+            <div class="inside">API</div>
+          </div>
+        </div>
+        <div class="picture" style="top: 140px; left: 840px;">
+          <div class="frame">
+            <div class="inside">Json</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  <div class="intro">
+    <div class="intro-text" >
+      <h1 class="hide">
+        <span class="text">_Web_Sites</span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">Learn Everyday</span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">Like & Follow</span>
+      </h1>
+    </div>
+  </div>
+  <div class="slider"></div>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+  integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+  crossorigin="anonymous"
+  ></script>
+  
+  <script>
+    const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+    tl.to(".text", { y: "0%", duration: 2, stagger: 0.25 });
+    tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
+    tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+    tl.fromTo(".wrapper", { opacity: 0 }, { opacity: 1, duration: 1 });
+
+  </script>
+  
+</body>
+</html>
