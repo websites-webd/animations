@@ -18,11 +18,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #1e1e1e;
+    background: #f6d887;
 }
 
 .container {
-    width: 1000px;
+    width: 800px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -30,8 +30,10 @@ body {
 
 .container .card {
     position: relative;
-    width: 300px;
+    width: 220px;
     height: 200px;
+    margin:10px 10px;
+    border:2px solid #fff;
 }
 
 .container .card .face {
@@ -40,7 +42,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 .container .card .face.face1 {
@@ -63,9 +65,19 @@ body {
     font-size: 1.5em;
 }
 
-.container .card:hover .face.face1 {
+.container .card:hover .face.face1.a {
     transform: translateY(-100%) rotateX(90deg);
     background: #ff0057;
+    transform:translateX(-101%);
+}
+.container .card:hover .face.face1.b {
+    transform: translateY(-100%) rotateX(90deg);
+    background: #ff0057;
+}
+.container .card:hover .face.face1.c {
+    transform: translateY(-100%) rotateX(90deg);
+    background: #ff0057;
+    transform:translateX(101%);
 }
 
 .container .card .face.face2 {
